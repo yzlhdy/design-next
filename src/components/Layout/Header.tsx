@@ -1,7 +1,7 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/react'
 import { Button, IconButton } from '@chakra-ui/button';
-import { Heading, HStack, Link, Text } from '@chakra-ui/layout';
+import { Heading, HStack, Link, LinkBox, Text } from '@chakra-ui/layout';
 import { IoMoonSharp, IoSunny } from 'react-icons/io5'
 import NextLink from 'next/link'
 import logoImage from '../../assets/images/logo.png'
@@ -12,14 +12,14 @@ const Header: React.FC = () => {
 
 	return (
 		<HStack justifyContent="space-between" alignItems="center" py={4} as="nav" width="full">
-			<NextLink href="/" passHref>
+			<LinkBox href="/" >
 				<Image
 					src={logoImage}
 					alt="logo"
 					width="40px"
 					height="40px"
 				/>
-			</NextLink>
+			</LinkBox>
 			<HStack alignItems="center" spacing={10} >
 				<NextLink href="/home" passHref>
 					<Button as={Link} size="sm" variant="ghost">

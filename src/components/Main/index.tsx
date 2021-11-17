@@ -38,12 +38,16 @@ const Main: React.FC = () => {
 			<Heading textAlign="center" fontSize="16">工具和资源</Heading>
 			<Heading textAlign="center" fontSize="16" mt={5}>在每个类别中找到您需要的工具</Heading>
 			<Box h={20}></Box>
-			<Grid templateColumns="repeat(6, 1fr)" gap={6}>
+			<Grid templateColumns={{
+				md: 'repeat(3, 1fr)',
+				base: 'repeat(2, 1fr)',
+				xl: 'repeat(6, 1fr)'
+			}} gap={6}>
 				{
-					listData.map((item) => {
+					listData.map((item, index) => {
 						return (
 							<MotionBox
-								key={item.title}
+								key={index}
 								height="200px"
 								width="200px"
 								backgroundColor="pink"
