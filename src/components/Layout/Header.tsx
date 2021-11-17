@@ -13,14 +13,12 @@ const Header: React.FC = () => {
 	return (
 		<HStack justifyContent="space-between" alignItems="center" py={4} as="nav" width="full">
 			<NextLink href="/" passHref>
-				<Button as={Link} size="sm" variant="ghost">
-					<Image
-						src={logoImage}
-						alt="logo"
-						width="40px"
-						height="40px"
-					/>
-				</Button>
+				<Image
+					src={logoImage}
+					alt="logo"
+					width="40px"
+					height="40px"
+				/>
 			</NextLink>
 			<HStack alignItems="center" spacing={10} >
 				<NextLink href="/home" passHref>
