@@ -22,8 +22,11 @@ const Tools: React.FC = () => {
 	const { query } = useRouter();
 	console.log("==================>query", query?.id);
 	const id: string = `data${query?.id}`;
+	const isValidKey = (key: string | number | symbol, object: object): key is keyof typeof object => {
+		return key in object;
+	}
 
-	const listData: DesignData = design[id] as any;
+	const listData: any = isValidKey(id, design) ? design[id] : design;
 	console.log("==================>listData", listData);
 	return (
 		<Box w={"full"} mt={"20px"} >
