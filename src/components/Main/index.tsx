@@ -7,6 +7,7 @@ interface ListData {
 	icon: string;
 	name: string;
 }
+
 const Main: React.FC = () => {
 	const { colorMode } = useColorMode()
 	console.log("==================>theme", colorMode);
@@ -176,10 +177,7 @@ const Main: React.FC = () => {
 			"icon": "⌚",
 			"name": "Productivity"
 		},
-		{
-			"icon": "📦",
-			"name": "Productivity System"
-		},
+
 		{
 			"icon": "🌐",
 			"name": "Browser extensions"

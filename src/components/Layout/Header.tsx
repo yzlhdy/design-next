@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 				/>
 			</LinkBox>
 			<HStack alignItems="center" spacing={10} >
-				<NextLink href="/home" passHref>
+				<NextLink href="/" passHref>
 					<Button as={Link} size="sm" variant="ghost">
 						<Text
 							_hover={{
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
 					</Button>
 				</NextLink>
 
-				<NextLink href="/about" passHref>
+				<NextLink href="/" passHref>
 					<Button as={Link} size="sm" variant="ghost">
 						<Text
 							_hover={{
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 					</Button>
 				</NextLink>
 
-				<NextLink href="/home" passHref>
+				<NextLink href="/" passHref>
 					<Button as={Link} size="sm" variant="ghost">
 						<Text
 							_hover={{
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
 						>分类</Text>
 					</Button>
 				</NextLink>
-				<NextLink href="/home" passHref>
+				<NextLink href="/" passHref>
 					<Button as={Link} size="sm" variant="ghost">
 						<Text
 							_hover={{

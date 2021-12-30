@@ -3,7 +3,7 @@ import React from 'react';
 
 import Head from 'next/head'
 import { motion } from 'framer-motion';
-import { Box, BoxProps, Center, Text } from '@chakra-ui/layout';
+import { Box, BoxProps, } from '@chakra-ui/layout';
 const MotionBox = motion<BoxProps>(Box)
 
 const About: React.FC = () => {
